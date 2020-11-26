@@ -1,4 +1,4 @@
-# The Report
+# The Voice Report
 
 ![TheVoice Title Card](/img/TheVoiceTitleCard.png)
 
