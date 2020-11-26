@@ -24,7 +24,7 @@ Web scraping program that captures current and trending data about my favorite s
 
 ## Guides and Resources
 
-![workflow](The-Report.pdf)
+![workflow](The-Report.jpg)
 
 ## User Story
 
