@@ -24,7 +24,7 @@ Web scraping program that captures current and trending data about my favorite s
 
 ## Guides and Resources
 
-![workflow](/img/The-Report.jpg)
+![workflow](/img/The-Voice-Report.png)
 
 ## User Story
 
