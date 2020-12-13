@@ -6,7 +6,7 @@
 
 Life happens and sometimes you have to miss your favorite show. As a 'Bachelorette' fan, missing an episode means missing out on who goes home each week. Unfortunately ABC does not update its site with the suitors that were not given a rose.
 
-This web scraping program will collect data that will be stored in a database. That will serve a trending snapshot of who went home.
+This web scraping program will collect data that will be stored in a database. That will serve a file of tweets of who went home.
 
 ## Technologies
 
@@ -21,8 +21,8 @@ This web scraping program will collect data that will be stored in a database. T
 
 - Web scrap The Bachelorette Website.
 - Collect tweets of who was eliminated.
-- Store all data.
-- Display formatted data.
+- Store cast data.
+- Display tweets in new file.
 
 ## Guides and Resources
 
