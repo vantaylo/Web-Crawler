@@ -24,6 +24,9 @@ This web scraping program will collect data that will be stored in a database. T
 - Store cast data.
 - Display tweets in new file.
 
+## Installation
+To activate virtual environment: $ source tutorial-env/bin/activate
+
 ## Guides and Resources
 
 ![workflow](/img/The-Voice-Report.png)
