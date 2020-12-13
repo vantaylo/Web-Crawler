@@ -1,4 +1,4 @@
-# The Web Crawler
+# Web Crawler
 
 ![TheBacheloretteLogo](/img/thebach.png)
 
