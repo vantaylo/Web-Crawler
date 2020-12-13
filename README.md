@@ -1,6 +1,6 @@
 # The Voice Report
 
-![TheBacheloretteLogo]()
+![TheBacheloretteLogo](thebach.png)
 
 ## Description
 
@@ -26,9 +26,10 @@ This web scraping program will collect data that will be stored in a database. T
 
 ## Guides and Resources
 
-![workflow]()
+![workflow](The-Voice-Report.png)
 
 ## User Story
+
 AS busy individual, it's sometimes hard to keep up with my favorite show, The Bachelorette.
 
 I WANT to be able to see which contestants were not given a rose if I miss an episode.
