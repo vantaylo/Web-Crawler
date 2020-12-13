@@ -1,20 +1,40 @@
 import requests
+import pymongo
+
 from bs4 import BeautifulSoup
-bachelors = []                                                                      # Declare Variable
-bachelors_imgs = []                                                                 
+from pymongo import MongoClient
 
-show_website = requests.get('https://abc.com/shows/the-bachelorette/cast')          # Make a request to the site / get it as a string
+def main():
+    cast_members = dict()
+    cast_member_name = str()
+    
+    ## Get Data
+    show_website = requests.get('https://abc.com/shows/the-bachelorette/cast')          # Make a request to the site / get it as a string
 
-soup = BeautifulSoup(show_website.content, 'html.parser')                           # Pass the string to a BeatifulSoup object
-cast = soup.find_all(class_='tile__name')
-cast_imgs = soup.find_all('picture')
+    soup = BeautifulSoup(show_website.content, 'html.parser')                           # Pass the string to a BeatifulSoup object
+    cast = soup.find_all(class_='tile__name')
+    cast_imgs = soup.find_all('picture')
+    cast_details = soup.find_all(class_='tile__desc')
 
-the_bachelorette = cast[0].get_text()                                               # The Bachelorette data
-the_bachelorette_img = cast_imgs[1]
+    cast_members = {}
+    # print(cast_details)
 
-chris_harrison_host = cast[1].get_text()                                            # Chris Harrison Data
-chris_harrison_host_img = cast_imgs[1]
+    for i in range(len(cast)):                                                          # TV show cast data
+        cast_member_name = cast[i].get_text().replace(".", "")
+        cast_member_img = cast_imgs[i]
+        cast_member_info = cast_details[i].get_text()
+        # print("*", cast_member_name, ":", cast_member_info)                           # Debug
 
-for i in range(2, len(cast, cast_imgs)):                                                       # Create list of the bachelors
-    bachelors.append(cast[i].get_text())
-    bachelors_imgs.append(cast_imgs[i])
+        cast_members[cast_member_name] = cast_member_info
+        
+
+    # Store Data
+    client = pymongo.MongoClient("mongodb+srv://vantaylo:bach2020@cluster0.mxv1u.mongodb.net/test?retryWrites=true&w=majority", tls=True, tlsAllowInvalidCertificates=True)   # Access client
+    
+    db = client.the_bachelorette_2020                            # Access databases
+    
+    collection = db.cast_members                                 # Access collection
+
+    collection.insert_one(cast_members)                          # Send show data to db
+  
+main()
