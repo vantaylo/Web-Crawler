@@ -1,6 +1,6 @@
 # The Voice Report
 
-![TheBacheloretteLogo](thebach.png)
+![TheBacheloretteLogo](/img/thebach.png)
 
 ## Description
 
@@ -26,7 +26,7 @@ This web scraping program will collect data that will be stored in a database. T
 
 ## Guides and Resources
 
-![workflow](The-Voice-Report.png)
+![workflow](/img/The-Voice-Report.png)
 
 ## User Story
 
