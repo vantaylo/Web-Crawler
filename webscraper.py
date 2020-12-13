@@ -40,6 +40,7 @@ def main():
         # print("*", cast_member_name, ":", cast_member_info)                           # Debug
 
         cast_members[cast_member_name] = cast_member_info
+        print("CAST MEMBERS", cast_members)
         
     ## Go to Twitter
     
@@ -74,6 +75,5 @@ def main():
     f.close()
 
     f = open("theBachelorette.txt", "r")                                          # Open and read the file after the appending:
-    print(f.read(cast))
 
 main()
