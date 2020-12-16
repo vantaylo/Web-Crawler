@@ -6,7 +6,7 @@
 
 Life happens and sometimes you have to miss your favorite show. As a 'Bachelorette' fan, missing an episode means missing out on who goes home each week. Unfortunately ABC does not update its site with the suitors that were not given a rose.
 
-This web scraping program will collect data that will be stored in a database and create a file of tweets.
+This web scraping program will collect data that will help find who was sent home, data will be stored in a database as well as create a file.
 
 ## Technologies
 
