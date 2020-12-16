@@ -25,8 +25,8 @@ This web scraping program will collect data that will help find who was sent hom
 - Display tweets in new file.
 
 ## Installation
-To install dependencies run $ pip3 install -r requirements.txt
-To run program run $ python3 webscraper.py
+- To install dependencies run $ pip3 install -r requirements.txt
+- To run program run $ python3 webscraper.py
 
 ## Guides and Resources
 
