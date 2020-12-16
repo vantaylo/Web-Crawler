@@ -73,7 +73,5 @@ def main():
     f = open("theBachelorette.txt", "x")
     f.write(str(tweets_df))
     f.close()
-
-    f = open("theBachelorette.txt", "r")                                          # Open and read the file after the appending:
-
+    
 main()
