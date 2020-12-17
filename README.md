@@ -31,7 +31,7 @@ This web scraping program will collect data that will help find who was sent hom
 
 ## Guides and Resources
 
-![workflow](/img/The-Bachekorette-Report.png)
+![workflow](/img/The-Bachelorette-Report.png)
 
 ## User Story
 
